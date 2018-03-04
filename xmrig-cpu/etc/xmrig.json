@@ -1,0 +1,58 @@
+{
+  "algo": "cryptonight",
+  "background": false,
+  "colors": false,
+  "retries": 5,
+  "retry-pause": 5,
+  "donate-level": 1,
+  "syslog": true,
+  "log-file": null,
+  "print-time": 60,
+  "av": 0,
+  "safe": false,
+  "max-cpu-usage": 95,
+  "cpu-priority": 5,
+  "threads": null,
+  "pools": [
+    {
+      "url": "pool.minexmr.com",
+      "user": "46vBhfyQMMM2vu2HHNVonb4ZH3z92kAvVSvfxctEP9Kr12xPANBvwEP4NPkLfbWXDcMsvJVXwkscn48gcUAv4hBZJuFXhYS",
+      "pass": "",
+      "keepalive": true,
+      "nicehash": false
+    },
+    {
+      "url": "fr.minexmr.com",
+      "user": "46vBhfyQMMM2vu2HHNVonb4ZH3z92kAvVSvfxctEP9Kr12xPANBvwEP4NPkLfbWXDcMsvJVXwkscn48gcUAv4hBZJuFXhYS",
+      "pass": "",
+      "keepalive": true,
+      "nicehash": false
+    },
+    {
+      "url": "de.minexmr.com",
+      "user": "46vBhfyQMMM2vu2HHNVonb4ZH3z92kAvVSvfxctEP9Kr12xPANBvwEP4NPkLfbWXDcMsvJVXwkscn48gcUAv4hBZJuFXhYS",
+      "pass": "",
+      "keepalive": true,
+      "nicehash": false
+    },
+    {
+      "url": "ca.minexmr.com",
+      "user": "46vBhfyQMMM2vu2HHNVonb4ZH3z92kAvVSvfxctEP9Kr12xPANBvwEP4NPkLfbWXDcMsvJVXwkscn48gcUAv4hBZJuFXhYS",
+      "pass": "",
+      "keepalive": true,
+      "nicehash": false
+    },
+    {
+      "url": "sg.minexmr.com",
+      "user": "46vBhfyQMMM2vu2HHNVonb4ZH3z92kAvVSvfxctEP9Kr12xPANBvwEP4NPkLfbWXDcMsvJVXwkscn48gcUAv4hBZJuFXhYS",
+      "pass": "",
+      "keepalive": true,
+      "nicehash": false
+    }
+  ],
+  "api": {
+    "port": null,
+    "access-token": null,
+    "worker-id": null
+  }
+}

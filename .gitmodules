@@ -1,0 +1,3 @@
+[submodule "xmrig-cpu/src"]
+	path = xmrig-cpu/src
+	url = https://github.com/xmrig/xmrig.git
