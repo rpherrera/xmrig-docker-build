@@ -1,16 +1,25 @@
 FROM alpine:3.7
 
+ARG AEON=ON
+ARG HTTPD=OFF
+ARG LIBCPUID=ON
+
 RUN apk update &&\
   apk add --no-cache \
       build-base \
       cmake \
       curl \
+      libmicrohttpd-dev \
       libuv-dev && \
   mkdir -p /tmp/xmrig/build && \
   curl -sSLo /tmp/xmrig-v2.4.5.tar.gz https://github.com/xmrig/xmrig/archive/v2.4.5.tar.gz && \
   tar --strip-components=1 -C /tmp/xmrig -xzf /tmp/xmrig-v2.4.5.tar.gz && \
   cd /tmp/xmrig/build && \
-  cmake -DWITH_HTTPD=OFF .. && \
+  cmake \
+    -DWITH_AEON=$AEON \
+    -DWITH_HTTPD=$HTTPD \
+    -DWITH_LIBCPUID=$LIBCPUID \
+    .. && \
   make && \
   mv xmrig /usr/local/bin && \
   apk del \

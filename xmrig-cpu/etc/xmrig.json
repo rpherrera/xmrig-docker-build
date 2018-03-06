@@ -51,7 +51,7 @@
     }
   ],
   "api": {
-    "port": null,
+    "port": 11111,
     "access-token": null,
     "worker-id": null
   }

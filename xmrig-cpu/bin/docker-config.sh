@@ -1,17 +1,8 @@
 #!/bin/bash -ex
 
-function to_lower() {
-  echo "${1}" | tr '[:upper:]' '[:lower:]'
-}
-
 AUTHOR=${AUTHOR-'herrera'}
 OS_FLAVOR=${OS_FLAVOR-'alpine'}
 OS_VERSION=${OS_VERSION-'3.7'}
 XMRIG_FLAVOR=${XMRIG_FLAVOR-'xmrig-cpu'}
 XMRIG_VERSION=${XMRIG_VERSION-'2.4.5'}
-CMAKE_AEON=${CMAKE_AEON-'ON'}
-CMAKE_LIBCPUID=${CMAKE_LIBCPUID:-'ON'}
-CMAKE_HTTPD=${CMAKE_HTTPD:-'OFF'}
-CMAKE_OPTIONS="aeon_$(to_lower ${CMAKE_AEON})-cpuid_$(to_lower ${CMAKE_LIBCPUID})-httpd_$(to_lower ${CMAKE_HTTPD})"
-DOCKER_IMAGE="${AUTHOR}/${XMRIG_FLAVOR}:${XMRIG_VERSION}"
-DOCKER_IMAGE_FULL="${AUTHOR}/${XMRIG_FLAVOR}:${OS_FLAVOR}-${OS_VERSION}-xmrig-${XMRIG_VERSION}-${CMAKE_OPTIONS}"
+DEFAULT_DOCKER_IMAGE='herrera/xmrig-cpu:alpine-3.7-xmrig-2.4.5-aeon_on-httpd_off-libcpuid_on'
