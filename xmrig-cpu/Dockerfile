@@ -16,6 +16,7 @@ RUN apk update &&\
   tar --strip-components=1 -C /tmp/xmrig -xzf /tmp/xmrig-v2.4.5.tar.gz && \
   cd /tmp/xmrig/build && \
   cmake \
+    -DCMAKE_BUILD_TYPE=Release \
     -DWITH_AEON="${AEON}" \
     -DWITH_HTTPD="${HTTPD}" \
     -DWITH_LIBCPUID="${LIBCPUID}" \
