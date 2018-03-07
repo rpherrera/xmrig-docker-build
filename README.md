@@ -4,7 +4,7 @@
 
 Docker builds for [High Performance Monero (XMR) CPU Miner](https://github.com/xmrig/xmrig).
 
-Provides different building variants regarding to some CMake Flags combined:
+Provides different Docker Images with multiple building variants regarding to some CMake Flags combined:
 
 * `WITH_AEON`: ON/OFF
 
@@ -23,9 +23,9 @@ Features some wrappers that can be used as examples in order to run the containe
 | Tag                                                    | CMake Flag: WITH_AEON | CMake Flag: WITH_HTTPD | CMake Flag: WITH_LIBCPUID |
 |--------------------------------------------------------|-----------------------|------------------------|---------------------------|
 | latest                                                 | ON                    | ON                     | ON                        |
-| latest-no-httpd                                        | ON                    | ON                     | ON                        |
+| latest-no-httpd                                        | ON                    | OFF                    | ON                        |
 | 2.4.5                                                  | ON                    | ON                     | ON                        |
-| 2.4.5-no-httpd                                         | ON                    | ON                     | ON                        |
+| 2.4.5-no-httpd                                         | ON                    | OFF                    | ON                        |
 | alpine-3.7-xmrig-2.4.5-aeon_on-httpd_on-libcpuid_on    | ON                    | ON                     | ON                        |
 | alpine-3.7-xmrig-2.4.5-aeon_on-httpd_on-libcpuid_off   | ON                    | ON                     | OFF                       |
 | alpine-3.7-xmrig-2.4.5-aeon_on-httpd_off-libcpuid_on   | ON                    | OFF                    | ON                        |
