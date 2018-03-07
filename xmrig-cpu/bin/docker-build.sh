@@ -24,7 +24,7 @@ function build_image() {
 }
 
 function build_default_image() {
-  build_image 'ON' 'OFF' 'ON'
+  build_image 'ON' 'ON' 'ON'
 }
 
 function build_all_images() {

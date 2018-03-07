@@ -1,7 +1,7 @@
 FROM alpine:3.7
 
 ARG AEON=ON
-ARG HTTPD=OFF
+ARG HTTPD=ON
 ARG LIBCPUID=ON
 
 RUN apk update &&\
