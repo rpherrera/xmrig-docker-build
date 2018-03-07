@@ -9,7 +9,7 @@ function to_lower() {
 }
 
 function get_docker_image() {
-  CMAKE_OPTIONS="aeon_$(to_lower ${1})-httpd_$(to_lower ${3})-libcpuid_$(to_lower ${2})"
+  CMAKE_OPTIONS="aeon_$(to_lower ${1})-httpd_$(to_lower ${2})-libcpuid_$(to_lower ${3})"
   DOCKER_IMAGE="${AUTHOR}/${XMRIG_FLAVOR}:${OS_FLAVOR}-${OS_VERSION}-xmrig-${XMRIG_VERSION}-${CMAKE_OPTIONS}"
   echo "${DOCKER_IMAGE}"
 }
@@ -38,5 +38,5 @@ function build_all_images() {
   done
 }
 
-#build_default_image
+# build_default_image
 build_all_images
