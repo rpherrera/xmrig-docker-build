@@ -40,5 +40,7 @@ Please take a look at the [DockerHub page](https://hub.docker.com/r/herrera/xmri
 ## Author
 
 Rafael de Paula Herrera [<herrera.rp@gmail.com>](mailto:herrera.rp@gmail.com)
-XMR: 46vBhfyQMMM2vu2HHNVonb4ZH3z92kAvVSvfxctEP9Kr12xPANBvwEP4NPkLfbWXDcMsvJVXwkscn48gcUAv4hBZJuFXhYS
-BTC: 1boderQndxMt81ZR994WN3k6KsrEZcYkG
+
+XMR: `46vBhfyQMMM2vu2HHNVonb4ZH3z92kAvVSvfxctEP9Kr12xPANBvwEP4NPkLfbWXDcMsvJVXwkscn48gcUAv4hBZJuFXhYS`
+
+BTC: `1boderQndxMt81ZR994WN3k6KsrEZcYkG`
