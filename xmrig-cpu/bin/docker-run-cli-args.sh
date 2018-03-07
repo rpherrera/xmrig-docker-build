@@ -17,7 +17,7 @@ CPU_PRIORITY=${CPU_PRIORITY-'5'}
 docker run \
   --rm \
   --name=xmrig-cpu \
-  ${DEFAULT_DOCKER_IMAGE} \
+  ${DOCKER_IMAGE:-DEFAULT_DOCKER_IMAGE} \
   -S \
   --no-color \
   --donate-level ${DONATE_LEVEL} \

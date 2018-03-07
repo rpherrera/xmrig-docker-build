@@ -8,4 +8,4 @@ docker run \
   --rm \
   -v ${ABSOLUTE_PATH}/../etc/xmrig.json:/etc/xmrig.json \
   --name=xmrig-cpu \
-  ${DEFAULT_DOCKER_IMAGE}
+  ${DOCKER_IMAGE:-DEFAULT_DOCKER_IMAGE}
