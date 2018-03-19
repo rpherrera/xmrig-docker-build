@@ -24,6 +24,16 @@ Features some wrappers that can be used as examples in order to run the containe
 |--------------------------------------------------------|-----------------------|------------------------|---------------------------|
 | latest                                                 | ON                    | ON                     | ON                        |
 | latest-no-httpd                                        | ON                    | OFF                    | ON                        |
+| 2.5.0                                                  | ON                    | ON                     | ON                        |
+| 2.5.0-no-httpd                                         | ON                    | OFF                    | ON                        |
+| alpine-3.7-xmrig-2.5.0-aeon_on-httpd_on-libcpuid_on    | ON                    | ON                     | ON                        |
+| alpine-3.7-xmrig-2.5.0-aeon_on-httpd_on-libcpuid_off   | ON                    | ON                     | OFF                       |
+| alpine-3.7-xmrig-2.5.0-aeon_on-httpd_off-libcpuid_on   | ON                    | OFF                    | ON                        |
+| alpine-3.7-xmrig-2.5.0-aeon_on-httpd_off-libcpuid_off  | ON                    | OFF                    | OFF                       |
+| alpine-3.7-xmrig-2.5.0-aeon_off-httpd_on-libcpuid_on   | OFF                   | ON                     | ON                        |
+| alpine-3.7-xmrig-2.5.0-aeon_off-httpd_on-libcpuid_off  | OFF                   | ON                     | OFF                       |
+| alpine-3.7-xmrig-2.5.0-aeon_off-httpd_off-libcpuid_on  | OFF                   | OFF                    | ON                        |
+| alpine-3.7-xmrig-2.5.0-aeon_off-httpd_off-libcpuid_off | OFF                   | OFF                    | OFF                       |
 | 2.4.5                                                  | ON                    | ON                     | ON                        |
 | 2.4.5-no-httpd                                         | ON                    | OFF                    | ON                        |
 | alpine-3.7-xmrig-2.4.5-aeon_on-httpd_on-libcpuid_on    | ON                    | ON                     | ON                        |
